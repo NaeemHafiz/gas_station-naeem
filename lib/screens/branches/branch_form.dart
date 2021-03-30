@@ -7,7 +7,7 @@ import 'package:gas_station/common/text_view.dart';
 import 'package:gas_station/controllers/branch_controller.dart';
 import 'package:gas_station/db/db_service.dart';
 import 'package:gas_station/models/branch_model.dart';
-import 'package:gas_station/screens/dashboard/dashboard.dart';
+import 'package:gas_station/screens/dashboard/admin_dashboard.dart';
 import 'package:gas_station/utils/colors.dart';
 import 'package:gas_station/utils/widgetproperties.dart';
 import 'package:get/get.dart';
@@ -157,7 +157,7 @@ class BranchForm extends StatelessWidget {
       branchNameController.text = "";
       branchAddressController.text = "";
 
-      WidgetProperties.goToNextPage(buildContext, Dashboard());
+      WidgetProperties.goToNextPage(buildContext, AdminDashboard());
 // WidgetProperties.goToNextPageWithReplacement(
 // buildContext, OtpScreen());
 // WidgetProperties.goToNextPageWithReplacement(

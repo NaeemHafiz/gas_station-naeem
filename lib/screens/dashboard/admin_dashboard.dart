@@ -7,7 +7,7 @@ import 'package:gas_station/screens/employee/employee_screen.dart';
 import 'package:gas_station/screens/managers/manager_screen.dart';
 import 'package:gas_station/screens/notifications/notification_screen.dart';
 
-class Dashboard extends StatelessWidget {
+class AdminDashboard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CommonScreen(
@@ -63,4 +63,6 @@ class Dashboard extends StatelessWidget {
       ),
     );
   }
+
+
 }

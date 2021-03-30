@@ -11,7 +11,7 @@ import 'package:gas_station/controllers/user_controller.dart';
 import 'package:gas_station/db/db_service.dart';
 import 'package:gas_station/models/branch_model.dart';
 import 'package:gas_station/models/user/user_model.dart';
-import 'package:gas_station/screens/dashboard/dashboard.dart';
+import 'package:gas_station/screens/dashboard/admin_dashboard.dart';
 import 'package:gas_station/utils/colors.dart';
 import 'package:gas_station/utils/widgetproperties.dart';
 import 'package:get/get.dart';
@@ -239,7 +239,7 @@ class EmployeeForm extends StatelessWidget {
       employeeLastNameController.text="";
       employeeMobileNumberController.text="";
       employeeNumberController.text="";
-      WidgetProperties.goToNextPage(buildContext, Dashboard());
+      WidgetProperties.goToNextPage(buildContext, AdminDashboard());
 
 // WidgetProperties.goToNextPageWithReplacement(buildContext, OtpScreen());
     } else {

@@ -9,7 +9,7 @@ import 'package:gas_station/common/text_view.dart';
 import 'package:gas_station/controllers/user_controller.dart';
 import 'package:gas_station/db/db_service.dart';
 import 'package:gas_station/db/db_values.dart';
-import 'package:gas_station/screens/dashboard/dashboard.dart';
+import 'package:gas_station/screens/dashboard/admin_dashboard.dart';
 import 'package:gas_station/utils/colors.dart';
 import 'package:gas_station/utils/my_behaviour.dart';
 import 'package:gas_station/utils/widgetproperties.dart';
@@ -175,7 +175,7 @@ class OtpScreen extends StatelessWidget {
           FireStoreService().addUserPhoneAuthentication(userModel, "users");
           // DBValues.instance.setUserValue(true);
           WidgetProperties.goToNextPageWithReplacement(
-              buildContext, Dashboard());
+              buildContext, AdminDashboard());
           prefs.setBool('boolValue', true);
         } else {
           WidgetProperties.showToast(

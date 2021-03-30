@@ -3,11 +3,10 @@ import 'package:gas_station/common/text_view.dart';
 import 'package:gas_station/utils/colors.dart';
 import 'package:gas_station/utils/widgetproperties.dart';
 
-class CommonCard extends StatelessWidget {
+class CommonCardManager extends StatelessWidget {
   final Widget nextScreen;
   final IconData icon;
   final String title;
-  final String count;
 
   var _decoration = BoxDecoration(
       color: Colors.transparent,
@@ -17,7 +16,7 @@ class CommonCard extends StatelessWidget {
       border: Border.all(width: 1.5, color: AppColors.primaryColor),
       shape: BoxShape.rectangle);
 
-  CommonCard({this.nextScreen, this.icon, this.title, this.count});
+  CommonCardManager({this.nextScreen, this.icon, this.title});
 
   @override
   Widget build(BuildContext context) {
@@ -40,21 +39,9 @@ class CommonCard extends StatelessWidget {
             Textview2(
               fontWeight: FontWeight.bold,
               fontSize: 17.0,
-              title: "Total",
-              color: AppColors.primaryColor,
-            ),
-            Textview2(
-              fontWeight: FontWeight.bold,
-              fontSize: 17.0,
               title: title,
               color: AppColors.primaryColor,
             ),
-            Textview2(
-              fontWeight: FontWeight.bold,
-              fontSize: 17.0,
-              title: count,
-              color: AppColors.primaryColor,
-            )
           ],
         ),
       ),
